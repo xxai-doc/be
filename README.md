@@ -2,7 +2,7 @@
 
 # xxAI.art
 
-* [інтэрфейсны код](https://github.com/xxai-art/web)
+Універсальны код вэб-сайта з адкрытым зыходным кодам, запрашаем дапамагчы аптымізаваць пераклад
 
 * [інтэрфейсны код](https://github.com/xxai-art/web)
 * [Моўныя пакеты для сайта ў цэлым](https://github.com/xxai-art/web/tree/main/i18n)

@@ -7,3 +7,4 @@
 * [інтэрфейсны код](https://github.com/xxai-art/web)
 * [Моўныя пакеты для сайта ў цэлым](https://github.com/xxai-art/web/tree/main/i18n)
 * [Моўныя пакеты для модуляў уваходу](https://github.com/wacpkg/user/tree/main/ui.i18n)
+* [Шматмоўная дакументацыя вэб-сайта](https://github.com/xxai-doc)

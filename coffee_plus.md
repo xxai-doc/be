@@ -2,13 +2,13 @@
 
 [@w5/coffee_plus](http://npmjs.com/@w5/coffee_plus) , дадаць некаторыя магчымасці на аснове сінтаксісу coffeescript, гл. [coffee_plus](./coffee_plus.md) .
 
-* аб'явіць зменную
+## аб'явіць зменную
 
 ```
 + var1, var2
 ```
 
-* ярлык дэкларацыі
+## ярлык дэкларацыі
 
 `:$` прызначаны для выкарыстання з [svelte](https://svelte.dev/docs#component-format-script-3-$-marks-a-statement-as-reactive) .
 
@@ -90,7 +90,7 @@ $ : (func = function() {
 });
 ```
 
-* хуткі імпарт
+## хуткі імпарт
 
 ```
 > zx/globals:

@@ -1,10 +1,10 @@
 <p align="center"><a href="https://xxai.art"><img src="https://cdn.jsdelivr.net/gh/xxai-art/doc/logo.svg"/></a><br/><a href="https://xxai.art"><img src="https://cdn.jsdelivr.net/gh/xxai-art/doc/xxai.svg"/></a></p><p align="center"><a href="https://github.com/xxai-art/doc#readme"><img alt="I18N" src="https://cdn.jsdelivr.net/gh/wactax/img/t.svg"/></a>　<a href="https://groups.google.com/u/0/g/xxai-art"><img alt="Google Groups" src="https://cdn.jsdelivr.net/gh/wactax/img/g-groups.svg"/></a></p>
 
-# xxAI.art
+Рэкамендуецца спачатку ўсталяваць nodejs, [direnv](https://direnv.net) , [bun](https://github.com/oven-sh/bun) , а затым `direnv allow` пасля ўваходу ў каталог ( [.envrc](https://github.com/xxai-art/doc/blob/main/.envrc) будзе выкананы аўтаматычна пасля ўваходу ў каталог).
 
-Частка кода вэб-сайта з адкрытым зыходным кодам, запрашаем дапамагчы аптымізаваць пераклад.
+Значэнне: пераклад з кітайскай на японскую, карэйскую, англійскую, пераклад з англійскай на ўсе іншыя мовы. Калі вы хочаце падтрымліваць толькі кітайскую і англійскую мовы, вы можаце проста напісаць `zh: en` .
 
-## інтэрфейсны код
+Значэнне: пераклад з кітайскай на японскую, карэйскую, англійскую, пераклад з англійскай на ўсе іншыя мовы. Калі вы хочаце падтрымліваць толькі кітайскую і англійскую мовы, вы можаце проста напісаць `zh: en` .
 
 * [інтэрфейсны код](https://github.com/xxai-art/web)
 * [Моўныя пакеты для сайта ў цэлым](https://github.com/xxai-art/web/tree/main/i18n)
@@ -31,15 +31,15 @@
 
 ### Інструкцыя па аўтаматызацыі перакладу дакументаў
 
-Глядзіце рэпазітар [xxai-art/doc](https://github.com/xxai-art/doc)
+Глядзіце сховішча кодаў [xxai-art/doc](https://github.com/xxai-art/doc)
 
-Рэкамендуецца спачатку ўсталяваць nodejs, [direnv](https://direnv.net) і [bun](https://github.com/oven-sh/bun) , а затым запусціць `direnv allow` пасля ўваходу ў каталог.
+Рэкамендуецца спачатку ўсталяваць nodejs, [direnv](https://direnv.net) , [bun](https://github.com/oven-sh/bun) , а затым `direnv allow` пасля ўваходу ў каталог ( [.envrc](https://github.com/xxai-art/doc/blob/main/.envrc) будзе выкананы аўтаматычна пасля ўваходу ў каталог).
 
-Каб пазбегнуць занадта вялікіх сховішчаў, перакладзеных на сотні моў, я стварыў асобнае сховішча кодаў для кожнай мовы і стварыў арганізацыю для захоўвання гэтага сховішча
+Каб пазбегнуць вялікай кодавай базы, перакладзенай на сотні моў, я стварыў асобную кодавую базу для кожнай мовы і стварыў арганізацыю для захоўвання кодавай базы
 
-Усталяванне зменнай асяроддзя `GITHUB_ACCESS_TOKEN` і затым запуск [create.github.coffee](https://github.com/xxai-art/doc/blob/main/create.github.coffee) аўтаматычна створаць склад.
+Усталяванне зменнай асяроддзя `GITHUB_ACCESS_TOKEN` і затым запуск [create.github.coffee](https://github.com/xxai-art/doc/blob/main/create.github.coffee) аўтаматычна створаць сховішча кода.
 
-Вядома, можна і на склад пакласці.
+Вядома, вы таксама можаце змясціць яго ў кодавую базу.
 
 Спасылка на сцэнарый перакладу [run.sh](https://github.com/xxai-art/doc/blob/main/run.sh)
 
@@ -71,4 +71,8 @@ Google API выкарыстоўваецца для бясплатнага пер
 export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890
 ```
 
-Сцэнар перакладу згенеруе кэш перакладу ў каталогу `.i18n` , праверце яго `git status` і дадайце ў рэпазітар кода, каб пазбегнуць паўторных перакладаў.
+Скрыпт перакладу згенеруе перакладзены кэш у каталогу `.i18n` , праверце яго `git status` і дадайце ў рэпазітар кода, каб пазбегнуць паўторных перакладаў.
+
+Калі ласка, запускайце `bunx i18n` кожны раз, калі вы змяняеце пераклад, каб абнавіць кэш.
+
+Калі арыгінальны тэкст і пераклад змяняюцца адначасова, кэш будзе пераблытаны, таму, калі вы хочаце змяніць, вы можаце змяніць толькі адзін, а затым запусціць `bunx i18n` , каб абнавіць кэш.
